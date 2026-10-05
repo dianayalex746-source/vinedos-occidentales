@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Viñedos Occidentales</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            background: #f8f3ed;
+            color: #3b1f24;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4a101c, #741f32);
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        header h1 {
+            font-size: 42px;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            font-style: italic;
+        }
+
+        .menu {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .titulo {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .titulo h2 {
+            font-size: 32px;
+            color: #5b1726;
+        }
+
+        .titulo p {
+            margin-top: 8px;
+            color: #6d5a5d;
+        }
+
+        .vinos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .vino {
+            background: white;
+            border-radius: 18px;
+            padding: 30px 25px;
+            text-align: center;
+            box-shadow: 0 6px 20px rgba(70, 30, 40, 0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .vino:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(70, 30, 40, 0.25);
+        }
+
+        .botella {
+            font-size: 70px;
+            margin-bottom: 15px;
+        }
+
+        .vino h3 {
+            font-size: 28px;
+            color: #5b1726;
+            margin-bottom: 8px;
+        }
+
+        .tipo {
+            font-size: 16px;
+            font-weight: bold;
+            color: #9a6872;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .descripcion {
+            margin: 18px 0;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .especial {
+            border: 2px solid #b28b45;
+        }
+
+        .especial span {
+            display: inline-block;
+            background: #b28b45;
+            color: white;
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+
+        .precio {
+            font-size: 22px;
+            font-weight: bold;
+            color: #5b1726;
+        }
+
+        footer {
+            background: #3b111a;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🍷 VIÑEDOS OCCIDENTALES</h1>
+        <p>Elegancia, tradición y sabor en cada copa</p>
+    </header>
+
+    <section class="menu">
+
+        <div class="titulo">
+            <h2>Nuestros Vinos</h2>
+            <p>Descubre nuestra selección especial</p>
+        </div>
+
+        <div class="vinos">
+
+            <!-- VINO TINTO -->
+            <div class="vino">
+                <div class="botella">🍷</div>
+
+                <h3>Tierra Sagrada</h3>
+
+                <div class="tipo">
+                    Vino Tinto
+                </div>
+
+                <p class="descripcion">
+                    Un vino de carácter intenso y elegante,
+                    elaborado para acompañar momentos especiales.
+                </p>
+
+                <div class="precio">
+                    $350.00 MXN
+                </div>
+            </div>
+
+
+            <!-- VINO BLANCO -->
+            <div class="vino especial">
+
+                <span>⭐ NUESTRO ESPECIAL</span>
+
+                <div class="botella">🥂</div>
+
+                <h3>La Perla</h3>
+
+                <div class="tipo">
+                    Vino Blanco
+                </div>
+
+                <p class="descripcion">
+                    Fresco, delicado y elegante. Una selección
+                    especial de Viñedos Occidentales.
+                </p>
+
+                <div class="precio">
+                    $400.00 MXN
+                </div>
+            </div>
+
+
+            <!-- VINO ROSADO -->
+            <div class="vino">
+
+                <div class="botella">🌸</div>
+
+                <h3>Secret</h3>
+
+                <div class="tipo">
+                    Vino Rosado
+                </div>
+
+                <p class="descripcion">
+                    Suave, fresco y con un toque especial,
+                    perfecto para disfrutar en cualquier ocasión.
+                </p>
+
+                <div class="precio">
+                    $360.00 MXN
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>🍇 Viñedos Occidentales</p>
+        <p>“Cada momento merece elegancia, y cada brindis, un buen vino.”</p>
+    </footer>
+
+</body>
+</html>
